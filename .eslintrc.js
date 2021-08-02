@@ -20,7 +20,7 @@ module.exports = {
   rules: {
     'import/no-extraneous-dependencies': [
       'error',
-      { devDependencies: ['examples/*.*', 'lib/*.test.ts'] },
+      { devDependencies: ['examples/*.*', 'lib/*.test.ts', '__tests__/**/*'] },
     ],
     'import/extensions': ['error', 'never'],
     '@typescript-eslint/consistent-type-assertions': [
@@ -75,12 +75,6 @@ module.exports = {
       },
     ],
     'max-classes-per-file': 0,
-    'no-restricted-imports': [
-      'error',
-      {
-        patterns: ['../../*'],
-      },
-    ],
     'sort-keys': 'error',
     strict: [0, 'global'],
   },
