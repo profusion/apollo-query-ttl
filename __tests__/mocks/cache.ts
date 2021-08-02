@@ -1,6 +1,6 @@
 import { InMemoryCache } from '@apollo/client';
 
-import { Query } from '../stubs/NormalQueryComponent';
+import { Query } from '../stubs/shared';
 
 const cache = new InMemoryCache();
 cache.writeQuery({

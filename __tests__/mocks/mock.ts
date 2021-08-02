@@ -1,4 +1,4 @@
-import { Query } from '../stubs/NormalQueryComponent';
+import { Query } from '../stubs/shared';
 
 const mock = [
   {
