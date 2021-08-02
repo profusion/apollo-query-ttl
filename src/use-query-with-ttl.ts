@@ -37,7 +37,7 @@ const useQueryWithTTL: HookWithTTLFunction = ({
     fetchPolicy,
     onCompleted: data => {
       refreshTtl();
-      if (queryOptions?.onCompleted) {
+      if (queryOptions.onCompleted) {
         queryOptions.onCompleted(data);
       }
     },
