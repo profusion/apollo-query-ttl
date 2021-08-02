@@ -4,6 +4,7 @@ module.exports = {
     '/node_modules/',
     '/build/',
     'lib/test-utils.test.ts',
+    '/__tests__/',
   ],
   coverageThreshold: {
     global: {
@@ -13,9 +14,10 @@ module.exports = {
       statements: 100,
     },
   },
-  moduleFileExtensions: ['ts', 'js'],
+  moduleFileExtensions: ['ts', 'js', 'tsx'],
   modulePaths: ['<rootDir>/src'],
   preset: 'ts-jest',
-  testEnvironment: 'node',
+  testEnvironment: 'jsdom',
+  testMatch: ['**/?(*.)+(spec|test).[jt]s?(x)'],
   testPathIgnorePatterns: ['/node_modules/', '/build/', 'test-utils.test.ts'],
 };
