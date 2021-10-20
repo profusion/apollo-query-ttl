@@ -4,7 +4,7 @@
     "target": "ES2015",
     "module": "commonjs",
     "declaration": true,
-    "outDir": "./build",
+    "outDir": "./dist",
     "strict": true,
     "esModuleInterop": true,
     "baseUrl": "./",
@@ -15,7 +15,7 @@
   },
   "exclude": [
     "node_modules",
-    "build",
-    "lib/**/*.test.ts",
+    "dist",
+    "__tests__",
   ]
 }
