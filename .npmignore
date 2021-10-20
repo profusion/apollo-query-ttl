@@ -1,0 +1,8 @@
+/.eslint*
+/.prettierrc.json
+/.vscode
+/coverage
+/jest.config.js
+/src
+/tsconfig.json
+/.github
